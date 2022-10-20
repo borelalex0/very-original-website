@@ -7,9 +7,18 @@ function createElements(elementType, n/*number of elements*/) {
     }
     return 0;
 }
+/* Style Sheet Change Functionality */
+const lightModeButton = document.getElementById("lightmodebutton");
+const darkModeButton = document.getElementById("darkmodebutton");
+lightModeButton.onclick = function () {swapStyleSheet('./css/light-basic.css')}
+darkModeButton.onclick = function () {swapStyleSheet('./css/dark-basic.css')}
+function swapStyleSheet(style) {
+    document.getElementById("pageStyle").setAttribute("href", style);
+}
+/* End Style Sheet Change Functionality */
+
 
 const delement = document.createElement("div");
-const belement = document.querySelector("body");
 
 const h2 = document.createElement("h2");
 h2.textContent = "This content created by JavaScript";

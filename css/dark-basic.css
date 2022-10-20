@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+}
+
+.nav-bar {
+    color: white;
+    background-color: black;
+}
+
+.nav-bar-item {
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: lighter;
+    /* border not working*/
+    border-left: 1em;
+    border-right: 1em;
+    border-color: white;
+}
