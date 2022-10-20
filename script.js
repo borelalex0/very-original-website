@@ -1,4 +1,5 @@
 function createElements(elementType, n/*number of elements*/) {
+    /* create elements in the DOM*/
     let k = document.createElement(elementType);
     for (let i = 0; i < n; i++) {
         let k = document.createElement(elementType);
