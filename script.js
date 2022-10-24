@@ -8,11 +8,21 @@ function createElements(elementType, n/*number of elements*/) {
     }
     return 0;
 }
+
+function changeAttribute(object, attribute, attributeValue) {
+    for (let i = 0; i < object.length; i++) {
+        navRight[i].setAttribute(attribute,attributeValue);
+    }
+    return 0;
+}
+
 /* Style Sheet Change Functionality */
-const lightModeButton = document.getElementById("lightmodebutton");
-const darkModeButton = document.getElementById("darkmodebutton");
+const lightModeButton = document.getElementById("lightModeButton");
+const darkModeButton = document.getElementById("darkModeButton");
+const basicModeButton = document.getElementById("basicModeButton");
 lightModeButton.onclick = function () {swapStyleSheet('./css/light-basic.css')}
 darkModeButton.onclick = function () {swapStyleSheet('./css/dark-basic.css')}
+basicModeButton.onclick = function () {swapStyleSheet('./css/basic.css')}
 function swapStyleSheet(style) {
     document.getElementById("pageStyle").setAttribute("href", style);
 }

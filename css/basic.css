@@ -1,11 +1,19 @@
 body {
-    background-color: black;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
     font-family: 'Lato', sans-serif;
 }
 
 p {
-    color: whitesmoke;
+    color: grey;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
 }
 
 ul {

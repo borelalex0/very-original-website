@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link id="pageStyle" rel="stylesheet" href="./css/light-basic.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+        </style>
+        <link id="pageStyle" rel="stylesheet" href="./css/basic.css">
         <title>very original website</title>
     </head>
     <body>
+        <header>
+            <ul class="nav-bar">
+                <li class="nav-bar-item"><a class="nav-bar-link" id='lightModeButton'>Light Mode</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" id='darkModeButton'>Dark Mode</a></li>
+                <li class="nav-bar-item"><a class="nav-bar-link" id='basicModeButton'>Basic Mode</a></li>
+            </ul>
+        </header>
         <div>
             <h1>
                 Welcome to the site!
@@ -12,17 +22,6 @@
             <p>
                 Make yourself comfortable.
             </p>
-        </div>
-        <div class="nav-bar">
-            <span class="nav-bar-item">
-                <button id="lightmodebutton">Light Mode</button>
-            </span>
-            <span class="nav-bar-item">
-                <button id="darkmodebutton">Dark Mode</button>
-            </span>
-            <span class="nav-bar-item">
-                This is a span.
-            </span>
         </div>
         <script src="script.js"></script>
     </body>
