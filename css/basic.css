@@ -5,7 +5,7 @@ body {
 }
 
 p {
-    color: grey;
+    color: black;
 }
 
 h1 {
@@ -21,16 +21,47 @@ ul {
     padding: 0;
 }
 
+/*top nav bar*/
+
+header {
+    text-align: center;
+    max-height: 10%;
+    height: 10%;
+    padding: 20px;
+}
+
 .nav-bar { /*ul*/
     list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-bar-item { /*li*/
     display: inline-block;
-    width: 10%;
+    width: 20%;
 }
 
 .nav-bar-link {/*a*/
     cursor: pointer;
     display: block;
+}
+
+.nav-bar-item:hover {
+    background-color: green;
+}
+
+.nav-bar-item:active {
+    background-color: lightcoral;
+}
+
+/*front page*/
+
+#front-page {
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
