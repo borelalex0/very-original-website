@@ -30,6 +30,7 @@ function swapStyleSheet(style) {
 
 
 const delement = document.createElement("div");
+delement.style.textAlign = "center"
 
 const h2 = document.createElement("h2");
 h2.textContent = "This content created by JavaScript";
