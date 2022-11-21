@@ -1,9 +1,10 @@
 body {
-    background: linear-gradient(240deg, rgb(255, 0, 0),rgb(0,0,0));
-    color: black;
+    background: linear-gradient(240deg, rgb(0, 0, 0),rgb(105, 105, 105));
+    color: white;
     font-family: 'Lato', sans-serif;
 }
 
+/*
 p {
     color: black;
 }
@@ -15,6 +16,7 @@ h1 {
 h2 {
     color: black;
 }
+*/
 
 ul {
     margin: 0;
@@ -60,8 +62,74 @@ header {
     width: 80%;
     height: 80%;
     padding: 20px;
-    background-color: lightcoral;
+    background-color: black;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+}
+
+ol {
+    margin: auto;
+    width: 50%
+}
+
+li {
+    margin: auto;
+    text-align: left;
+}
+
+/* blog blocks */
+
+.code-sample {
+    border: 2px;
+    border-color: rgb(98, 98, 217);
+    border-style: groove;
+    width: 60%;
+    margin: 10px auto;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.blog-area {
+    border: 0px;
+}
+
+.blog-area:last-child {
+    border-bottom: 2px;
+    border-color: lightgrey;
+    border-style: groove;
+}
+
+.blog-section {
+    border-top: 2px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: lightgrey;
+    border-style: groove;
+}
+
+.blog-sample {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blog-text {
+    text-align: left;
+    display: inline;
+}
+
+/* text effects */
+
+.bool {
+    color:rgb(0, 162, 255);
+    display: inline;
+}
+
+.return-value {
+    color: rgb(29, 168, 232);
+    background-color: rgb(105, 101, 101);
+    border-radius: 5px;
+    display: inline;
+    padding: 1px;
 }

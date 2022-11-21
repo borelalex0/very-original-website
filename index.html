@@ -27,14 +27,126 @@
                 </p>
                 <form action="css/answers.txt" target="_self">
                     <fieldset>
-                        <legend>Provide some information.</legend>
-                        <input type="text" name="Test Field" placeholder="some information" required>
+                        <legend>What topic would you like to see covered next?</legend>
+                        <input type="text" name="Topic Field" placeholder="Topic" required>
                         <button type="submit">Submit</button>
                         <p>Is GIF pronounced GIF or GIF?</p>
                         <input id="radio1" type="radio" name="gif"/><label for="radio1">GIF</label>
                         <input id="radio2" type="radio" name="gif"/><label for="radio2">GIF</label>
                     </fieldset>
                 </form>
+            </section>
+            <section class="blog-area">
+                <h2>
+                    Blog Posts
+                </h2>
+                <section class="blog-section">
+                    <h3 class="blog-title">Recursive Functions</h3>
+                    <p class="post-date"></p>
+                    <p class="blog-text">
+                        Recursive functions are functions that achieve their intended purpose by calling themself, inside the
+                        function. Recursive funcitons consist of two parts:
+                    </p>
+                        <ol>
+                            <li>Base Case</li>
+                            <li>Step to reach the base case</li>
+                        </ol>
+                </section>
+                <section class="blog-section">
+                    <h3 class="blog-title">The JavaScript "Promise" Constructor</h3>
+                    <p class="post-date"></p>
+                    <p class="blog-text">
+                        The JavaScript promise constructor is used to make a promise to complete a task at a later time. 
+                        The promise constructor takes a function as an argument and has two outcomes, resolve and reject. 
+                        Resolve and reject are methods passed into the function as parameters. Take a look at this example:
+                    </p>
+                    <p class="code-sample">
+                    const sendData = new Promise((resolve, reject) => {<br>
+                        &emsp;// use resolve and reject methods to return message based on whether or not data was sent successfully.<br>
+                        &emsp;let dataSent;<br>
+                        &emsp;if (dataSent) {<br>
+                            &emsp;&emsp;resolve("Data was sent successfully.");<br>
+                        &emsp;} else {<br>
+                            &emsp;&emsp;reject("Error - Data not sent.");<br>
+                        &emsp;}<br>
+                    });<br>
+                    </p>
+                    <p class="blog-text">
+                        You can also add 
+                    </p>
+                </section>
+                <section class="blog-section">
+                    <h3 class="blog-title">Regular Expressions - "Regex"</h3>
+                    <p class="post-date"></p>
+                    <p class="blog-text">
+                        Regular Expressions, also known as Regex, is a syntactic sugar used by developers to search for characters in a string. Here we will go over the basics, but the more in depth you go the more versatile your string searches can become! Regex is used by putting the string that you're searching for between two forward-slashes (/searchterm/). Let's start with an example:
+                    </p>
+                    <p class="code-sample">
+                        // assign some string to a variable<br>
+                        let myStr = "Here is some text. There is some text.";<br>
+                        // assign the regex to a variable. This will search for 'text' when applied to astring.<br>
+                        let myRegex = /text/;<br>
+                    </p>
+                    <p class="blog-text">
+                        Now we have the string that we will be searching through, myStr, and the string we will be searching for, 
+                        myRegex. So how do we apply the regex to the string? There are two methods:
+                    </p>
+                    <ol>
+                        <li>test - returns true if regex is present in string, false otherwise.</li>
+                        <li>match - returns an array with the first match to the regex.</li>
+                    </ol>
+                    <p class="blog-text">
+                        Let's look at an example of test:
+                    </p>
+                    <p class="code-sample">
+                        // carry over variable delaractions from last example<br>
+                        let myStr = "Here is some text. There is some text.";<br>
+                        let myRegex = /text/;<br>
+                        // test example<br>
+                        let result = myRegex.test(myStr);<br>
+                        console.log(result);<br>
+                    </p>
+                    <p class="blog-text">
+                        In this case, the console will show 
+                    </p>
+                    <p class="return-value">true</p>
+                    <p class="blog-text">, since the test method found 'text' 
+                        within the string, myStr.
+                        Now let's look at an example of match:
+                    </p>
+                    <p class="code-sample">
+                        // carry over variable delaractions from last example;<br>
+                        let myStr = "Here is some text. There is some text.";<br>
+                        let myRegex = /text/;<br>
+                        // match example<br>
+                        let result = myStr.match(myRegex);<br>
+                        console.log(result);<br>
+                    </p>
+                    <p class="blog-text">
+                        In this case, the console will show </p>
+                    <p class="return-value">
+                        [text]
+                    </p>
+                    <p class="blog-text">
+                        , returning the first value of 'text' in the string. So how can we return an array with <em>all</em> the matches of 'text' in our string? For that, we must use flags. If you're familiar with console commands, you probably have an idea of flags. Unlike console commands, these are added to your JavaScript code. To return all values in the string that match the regex, use the 'g' flag. It looks like this:
+                    </p>
+                    <p class="code-sample">
+                        // run the same code as last time with the g flag<br>
+                        let myStr = "Here is some text. There is some text.";<br>
+                        let myRegex = /text/g;<br>
+                        let result = myStr.match(myRegex);<br>
+                        return result;<br>
+                    </p>
+                    <p class="blog-text">
+                        Notice the 'g' at the end of the myRegex declaration. This code will now return all instances of 'text' within myStr, like this:
+                    </p>
+                    <p class="return-value">
+                        [text, text]
+                    </p>
+                    <p class="blog-text">
+                        .
+                    </p>
+                </section>
             </section>
         </div>
         <script src="script.js"></script>
