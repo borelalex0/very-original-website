@@ -129,7 +129,9 @@ li {
 .return-value {
     color: rgb(29, 168, 232);
     background-color: rgb(105, 101, 101);
-    border-radius: 5px;
+    border-radius: 1px;
     display: inline;
-    padding: 1px;
+    padding: 2px 4px;
+    font-size: 90%;
+
 }
