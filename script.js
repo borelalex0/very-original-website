@@ -9,4 +9,4 @@ h2.textContent = "This content created by JavaScript";
 delement.appendChild(h2);
 document.body.appendChild(delement);
 
-createElements()
+createElements('h2',3,'success!');
