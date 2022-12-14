@@ -38,8 +38,13 @@ header {
     padding-bottom: 10px;
 }
 
-.nav-bar-item { /*li*/
+.nav-bar-item-horizontal { /*li*/
     display: inline-block;
+    width: 20%;
+}
+
+.nav-bar-item-vertical { /*li*/
+    display: block;
     width: 20%;
 }
 
@@ -48,7 +53,11 @@ header {
     display: block;
 }
 
-.nav-bar-item:hover {
+.nav-bar-item-horizontal:hover {
+    background-color: green;
+}
+
+.nav-bar-item-vertical:hover {
     background-color: green;
 }
 
