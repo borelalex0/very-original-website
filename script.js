@@ -1,11 +1,23 @@
 import {createElements, insertDropDown} from './tools.js'
 
-document.onload = () => {
+/* document.onload = () => {
     let cliDropDown = ['ls','cd','mkdir','rmdir','rm','mv'];
     let cliDropDownInsertID = 'cli-blog-section';
     insertDropDown(cliDropDown, cliDropDownInsertID);
 
-}
+} */
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.onload = () => {
+        let cliDropDown = ['ls','cd','mkdir','rmdir','rm','mv'];
+        let cliDropDownInsertID = 'cli-blog-section';
+        insertDropDown(cliDropDown, cliDropDownInsertID);
+    
+    }
+});
+
+let element = document.body;
+element.html
 
 /* const delement = document.createElement("div");
 delement.style.textAlign = "center"
