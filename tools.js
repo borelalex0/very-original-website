@@ -1,4 +1,4 @@
-export {createElements};
+export {createElements, insertDropDown};
 
 function createElements(elementType = 'div', n = 1 /*number of elements*/, textContentstring = `Default`) {
     /* create elements in the DOM */
@@ -9,6 +9,27 @@ function createElements(elementType = 'div', n = 1 /*number of elements*/, textC
         document.body.appendChild(tempElement);
     }
     return 0;
+}
+
+function insertDropDown(dropDownList, insertAtID) {
+    let parent1 = document.getElementById(insertAtID);
+    let tempul = document.createElement("ul");
+    tempul.className = "nav-bar";
+    tempul.id = "cliDropDownList";
+    document.getElementById(insertAtID).append(tempul);
+    console.log(`appended element id=${tempul}`);
+    for (let i = 0; i < dropDownList.length; i++) {
+        console.log(`loop ${i}`);
+        let templi = document.createElement("li");
+        let tempa = document.createElement("a");
+        templi.className = "nav-bar-item-vertical";
+        tempa.className = "nav-bar-link";
+        tempa.id = dropDownList[i] + "DropDownButton";
+        tempa.innerHTML = dropDownList[i];
+        tempul.append(templi);
+        templi.append(tempa);
+        console.log(`appended element id=${tempa.id}`);
+    }
 }
 
 /* function that reads content of an element, if it has children, recurse, if not, log as html content. */
